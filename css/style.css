@@ -1252,15 +1252,25 @@ body {
   }
 
   .home-broad {
-    top: 52vw;
+    top: calc(63.94vw + 24px);
     left: 8vw;
     width: 30vw;
   }
 
   .home-museum {
-    top: 48vw;
+    top: calc(81.94vw + 48px);
     left: 8vw;
     width: calc(100% - 16vw);
+  }
+
+  .home-pagination-highline {
+    top: calc(61.34vw - 2px);
+    left: 10.6vw;
+  }
+
+  .home-pagination-museum {
+    top: calc(136.13vw + 48px);
+    left: 9.34vw;
   }
 
   .menu-links {
