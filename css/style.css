@@ -135,7 +135,7 @@ body {
 .menu-vertical-link {
   position: absolute;
   top: 121px;
-  left: 68px;
+  left: 0;
   display: block;
   width: 170px;
   height: 120.127px;
@@ -149,8 +149,9 @@ body {
 
 .side-name {
   position: absolute;
+  top: 0;
   right: 0;
-  bottom: 212.88px;
+  bottom: auto;
   width: 34.25px;
   height: 1027.121px;
 }
@@ -406,10 +407,6 @@ body {
   background: #000;
 }
 
-.broad-rail .side-name {
-  bottom: 2987.88px;
-}
-
 .mosque-page {
   position: relative;
   width: 1440px;
@@ -505,10 +502,6 @@ body {
   background: #000;
 }
 
-.mosque-rail .side-name {
-  bottom: 2987.88px;
-}
-
 .studio-page {
   position: relative;
   width: 1440px;
@@ -577,5 +570,295 @@ body {
   right: 0;
   width: 292px;
   height: 1273px;
+  background: #000;
+}
+
+.meet-us-page {
+  position: relative;
+  width: 1440px;
+  min-height: 2584px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.meet-us-content {
+  position: relative;
+  width: 1148px;
+  min-height: 2584px;
+}
+
+.meet-us-title {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 1147px;
+  margin: 0;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.person {
+  position: absolute;
+  left: 122px;
+  width: 831px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.person h2 {
+  position: relative;
+  z-index: 1;
+  height: 43px;
+  margin: 0 0 48px;
+  padding: 8px 0 0;
+  color: #fff;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.person h2::before {
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  z-index: -1;
+  height: 42px;
+  content: "";
+  background: #000;
+}
+
+.person-diller h2::before { width: 538px; }
+.person-scofidio h2::before { width: 544px; }
+.person-renfro h2::before { width: 537px; }
+.person-gilmartin h2::before { width: 610px; }
+
+.person p {
+  margin: 0;
+}
+
+.person-diller {
+  top: 336px;
+  height: 351px;
+}
+
+.person-scofidio {
+  left: 124px;
+  top: 747px;
+  height: 351px;
+}
+
+.person-renfro {
+  top: 1158px;
+  height: 299px;
+}
+
+.person-gilmartin {
+  left: 124px;
+  top: 1517px;
+  height: 325px;
+}
+
+.meet-us-image {
+  position: absolute;
+  top: 1946px;
+  left: 365px;
+  display: block;
+  width: 852px;
+  height: 639px;
+  object-fit: cover;
+}
+
+.meet-us-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 2584px;
+  background: #000;
+}
+
+.contact-page {
+  position: relative;
+  width: 1440px;
+  min-height: 1472px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.contact-content {
+  position: relative;
+  width: 1148px;
+  min-height: 1472px;
+}
+
+.contact-title {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 1075px;
+  margin: 0;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.contact-copy {
+  position: absolute;
+  top: 336px;
+  left: 122px;
+  width: 831px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact-copy section {
+  margin: 0 0 42px;
+}
+
+.contact-copy h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.contact-copy p {
+  margin: 0;
+}
+
+.contact-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 1472px;
+  background: #000;
+}
+
+.news-page {
+  position: relative;
+  width: 1440px;
+  min-height: 1652px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.news-content {
+  position: relative;
+  width: 1148px;
+  min-height: 1652px;
+}
+
+.news-title {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 1075px;
+  margin: 0;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.news-list {
+  position: absolute;
+  top: 336px;
+  left: 122px;
+  width: 900px;
+}
+
+.news-item {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 274px;
+}
+
+.news-item > img {
+  width: 223px;
+  height: 154px;
+  object-fit: cover;
+}
+
+.news-story {
+  width: 466px;
+  margin-left: 142px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+}
+
+.news-story h2 {
+  margin: 0 0 14px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.news-story p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.news-story span {
+  white-space: nowrap;
+}
+
+.news-item time {
+  position: absolute;
+  top: 0;
+  left: 872px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.news-pagination {
+  position: absolute;
+  top: 1401px;
+  left: 122px;
+  display: flex;
+  gap: 20px;
+}
+
+.news-pagination a {
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.news-pagination a.active {
+  font-weight: 800;
+}
+
+.news-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 1652px;
   background: #000;
 }
