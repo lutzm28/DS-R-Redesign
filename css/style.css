@@ -53,7 +53,8 @@ body {
 .home-quote {
   position: absolute;
   top: 633px;
-  left: calc(8.33% + 2px);
+  right: 0;
+  left: auto;
   display: block;
   width: 1196px;
   height: 447px;
@@ -66,27 +67,79 @@ body {
   width: 1440px;
   height: 1915px;
   overflow: hidden;
+}
+
+.home-projects-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1062px;
+  height: 1080px;
   background: #000;
 }
 
 .home-high-line {
   position: absolute;
-  top: 123px;
-  left: 730px;
+  top: 87px;
+  left: calc(33.33% + 7px);
   display: block;
-  width: 710px;
-  height: 473px;
+  width: 1002px;
+  height: 668px;
+  object-fit: cover;
+}
+
+.home-broad {
+  position: absolute;
+  top: 694px;
+  left: calc(8.33% + 2px);
+  display: block;
+  width: 345px;
+  height: 207px;
   object-fit: cover;
 }
 
 .home-museum {
   position: absolute;
-  top: 992px;
-  left: -521px;
+  top: 973px;
+  left: calc(8.33% + 2px);
   display: block;
-  width: 1353px;
-  height: 923px;
+  width: 1196px;
+  height: 816px;
   object-fit: cover;
+}
+
+.home-pagination {
+  position: absolute;
+  display: block;
+  display: flex;
+  gap: 10px;
+  width: auto;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.home-pagination-dot {
+  display: block;
+  width: 11.776px;
+  height: 9.856px;
+  background: #fff;
+}
+
+.home-pagination-dot.is-active {
+  background: #000;
+}
+
+.home-pagination-highline {
+  top: 724px;
+  left: calc(33.33% + 38px);
+}
+
+.home-pagination-museum {
+  top: 1761px;
+  left: calc(8.33% + 21px);
 }
 
 .menu-page {
@@ -965,6 +1018,11 @@ body {
     min-height: 80vh;
   }
 
+  .home-projects-background {
+    width: 74vw;
+    height: 75vw;
+  }
+
   .home-high-line {
     left: 50%;
     width: 48%;
@@ -972,11 +1030,18 @@ body {
     aspect-ratio: 710 / 473;
   }
 
-  .home-museum {
-    left: -20%;
-    width: 70%;
+  .home-broad {
+    left: 8vw;
+    width: 24vw;
     height: auto;
-    aspect-ratio: 1353 / 923;
+    aspect-ratio: 345 / 207;
+  }
+
+  .home-museum {
+    left: 8vw;
+    width: 83%;
+    height: auto;
+    aspect-ratio: 1196 / 816;
   }
 
   .menu-page {
@@ -1184,6 +1249,12 @@ body {
     top: 8vw;
     left: 8vw;
     width: calc(100% - 16vw);
+  }
+
+  .home-broad {
+    top: 52vw;
+    left: 8vw;
+    width: 30vw;
   }
 
   .home-museum {

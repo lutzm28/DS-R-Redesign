@@ -19,8 +19,14 @@
     <img src="assets/home-quote.svg" alt="We do everything differently" class="home-quote">
 
     <section class="home-projects" aria-label="Featured projects">
-      <img src="assets/high-line.png" alt="Aerial view of the High Line" class="home-high-line">
-      <img src="assets/museum.png" alt="Olympic and Paralympic Museum" class="home-museum">
+      <div class="home-projects-background" aria-hidden="true"></div>
+      <img src="assets/home-highline.jpg" alt="Aerial view of the High Line" class="home-high-line" data-home-carousel="primary">
+      <img src="assets/broad-expansion.png" alt="The Broad expansion" class="home-broad">
+      <img src="assets/home-columbia.jpg" alt="Columbia University campus" class="home-museum" data-home-carousel="secondary">
+      <button class="home-pagination home-pagination-highline" type="button" data-home-control="primary" aria-label="Show next featured project">
+      </button>
+      <button class="home-pagination home-pagination-museum" type="button" data-home-control="secondary" aria-label="Show next lower featured project">
+      </button>
     </section>
   </main>
 </body>
