@@ -1,3 +1,581 @@
 /* GLOBAL STYLESHEET */
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; }
+
+:root {
+  color: #000;
+  background: #fff;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+}
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 2995px;
+  margin: 0;
+  background: #fff;
+}
+
+.home-page {
+  position: relative;
+  width: 1440px;
+  min-height: 2995px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.home-navigation {
+  position: absolute;
+  top: 122px;
+  left: calc(8.33% + 2px);
+  width: 1195.819px;
+  height: 241px;
+}
+
+.home-nav-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home-menu-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 170px;
+  height: 120px;
+  outline-offset: 6px;
+}
+
+.home-menu-link:focus-visible {
+  outline: 3px solid #000;
+}
+
+.home-quote {
+  position: absolute;
+  top: 633px;
+  left: calc(8.33% + 2px);
+  display: block;
+  width: 1196px;
+  height: 447px;
+}
+
+.home-projects {
+  position: absolute;
+  top: 1080px;
+  left: 0;
+  width: 1440px;
+  height: 1915px;
+  overflow: hidden;
+  background: #000;
+}
+
+.home-high-line {
+  position: absolute;
+  top: 123px;
+  left: 730px;
+  display: block;
+  width: 710px;
+  height: 473px;
+  object-fit: cover;
+}
+
+.home-museum {
+  position: absolute;
+  top: 992px;
+  left: -521px;
+  display: block;
+  width: 1353px;
+  height: 923px;
+  object-fit: cover;
+}
+
+.menu-page {
+  position: relative;
+  width: 100%;
+  min-height: 2600px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.menu-links {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 1141px;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.menu-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-links a:focus-visible,
+.menu-vertical-link:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 6px;
+}
+
+.menu-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 2600px;
+  background: #000;
+}
+
+.menu-vertical-link {
+  position: absolute;
+  top: 121px;
+  left: 68px;
+  display: block;
+  width: 170px;
+  height: 120.127px;
+}
+
+.menu-vertical {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.side-name {
+  position: absolute;
+  right: 0;
+  bottom: 212.88px;
+  width: 34.25px;
+  height: 1027.121px;
+}
+
+.projects-page {
+  position: relative;
+  width: 1440px;
+  min-height: 2466px;
+  overflow: hidden;
+  background: #fff;
+  font-family: "Elms Sans", sans-serif;
+}
+
+.projects-content {
+  position: relative;
+  width: 1148px;
+  min-height: 2466px;
+  padding-top: 59px;
+  padding-left: 122px;
+}
+
+.project-categories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 831px;
+  gap: 18px 24px;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.project-categories a,
+.pagination a,
+.see-more {
+  color: #000;
+  text-decoration: none;
+}
+
+.project-categories a {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.project-categories a.active,
+.see-more,
+.pagination a.active {
+  font-weight: 800;
+}
+
+.project-search {
+  display: flex;
+  align-items: center;
+  width: 831px;
+  height: 24px;
+  border: 0.6px solid #000;
+}
+
+.project-search img {
+  width: 11px;
+  height: 12px;
+  margin-left: 5px;
+}
+
+.project-search input {
+  width: 100%;
+  height: 100%;
+  padding: 0 7px;
+  border: 0;
+  outline: 0;
+  font: inherit;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 365px);
+  gap: 67px 101px;
+  width: 831px;
+  margin-top: 120px;
+}
+
+.project-card {
+  display: block;
+  overflow: hidden;
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-large {
+  grid-column: 1 / -1;
+  width: 831px;
+}
+
+.project-card-large:nth-child(1) { height: 415.5px; }
+.project-card-large:nth-child(2) { height: 461.279px; }
+.project-card-large:nth-child(3) { height: 554.27px; }
+.project-card-small { height: 243.5px; }
+
+.see-more {
+  display: block;
+  margin-top: 29px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  position: absolute;
+  top: 2044px;
+  left: calc(9 * (1440px / 12) - 122px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pagination a {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.projects-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 2466px;
+  background: #000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.broad-page {
+  position: relative;
+  width: 1440px;
+  min-height: 4015px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.broad-content {
+  position: relative;
+  width: 1148px;
+  min-height: 4015px;
+}
+
+.broad-title {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 1075px;
+  margin: 0;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.broad-location {
+  position: absolute;
+  top: 234px;
+  left: calc(8.33% + 72px);
+  width: 31px;
+  height: 209px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.broad-exterior {
+  position: absolute;
+  top: 233px;
+  left: calc(16.67% + 3px);
+  display: block;
+  width: 1090px;
+  height: 726px;
+  object-fit: cover;
+}
+
+.broad-copy {
+  position: absolute;
+  top: 1059px;
+  left: calc(16.67% + 3px);
+  width: 710px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.broad-copy section {
+  margin: 0 0 42px;
+}
+
+.broad-copy h2 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.broad-copy p {
+  margin: 0 0 42px;
+}
+
+.broad-copy section:last-of-type p {
+  margin-bottom: 0;
+}
+
+.broad-copy-first {
+  top: 1059px;
+}
+
+.broad-copy-second {
+  top: 2650px;
+}
+
+.broad-interior {
+  position: absolute;
+  top: 2017px;
+  left: -152px;
+  display: block;
+  width: 1105px;
+  height: 579px;
+  object-fit: cover;
+}
+
+.broad-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 4015px;
+  background: #000;
+}
+
+.broad-rail .side-name {
+  bottom: 2987.88px;
+}
+
+.mosque-page {
+  position: relative;
+  width: 1440px;
+  min-height: 4015px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mosque-content {
+  position: relative;
+  width: 1148px;
+  min-height: 4015px;
+}
+
+.mosque-title {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 1081px;
+  margin: 0;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+
+.mosque-location {
+  position: absolute;
+  top: 329px;
+  left: calc(8.33% + 72px);
+  width: 31px;
+  height: 163px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.mosque-exterior {
+  position: absolute;
+  top: 329px;
+  left: calc(16.67% + 3px);
+  display: block;
+  width: 1090px;
+  height: 726px;
+  object-fit: cover;
+}
+
+.mosque-copy {
+  position: absolute;
+  left: calc(16.67% + 3px);
+  width: 710px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.mosque-copy p {
+  margin: 0 0 42px;
+}
+
+.mosque-copy-first {
+  top: 1155px;
+}
+
+.mosque-copy-second {
+  top: 2700px;
+}
+
+.mosque-interior {
+  position: absolute;
+  top: 2078px;
+  left: -152px;
+  display: block;
+  width: 1105px;
+  height: 579px;
+  object-fit: cover;
+}
+
+.mosque-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 4015px;
+  background: #000;
+}
+
+.mosque-rail .side-name {
+  bottom: 2987.88px;
+}
+
+.studio-page {
+  position: relative;
+  width: 1440px;
+  min-height: 1273px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.studio-content {
+  position: relative;
+  width: 1148px;
+  min-height: 1273px;
+}
+
+.studio-title {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 1075px;
+  margin: 0;
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.studio-copy {
+  position: absolute;
+  top: 336px;
+  left: 122px;
+  width: 831px;
+  color: #000;
+  font-family: "Elms Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.studio-copy p {
+  margin: 0;
+}
+
+.studio-partners {
+  position: absolute;
+  top: 902px;
+  left: 123px;
+  display: block;
+  width: 415px;
+  height: 35px;
+  padding: 6px 8px 0;
+  color: #fff;
+  background: linear-gradient(#000 0 27px, transparent 27px 35px);
+  font-family: "Gear Wide", "Arial Black", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.studio-rail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 292px;
+  height: 1273px;
+  background: #000;
+}
